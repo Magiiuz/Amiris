@@ -8,7 +8,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
 
 <style>
-
 body{
 margin:0;
 padding:0;
@@ -98,7 +97,6 @@ line-height:1.8;
 color:#444;
 }
 
-/* FOTO DEL MAR MÁS GRANDE */
 .place-photo{
 width:100%;
 max-width:1400px;
@@ -109,7 +107,6 @@ box-shadow:0 20px 60px rgba(0,0,0,0.4);
 margin-top:40px;
 }
 
-/* GALERÍA DE 6 FOTOS */
 .gallery{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
@@ -128,104 +125,73 @@ transition:0.4s;
 .gallery img:hover{
 transform:scale(1.05);
 }
-
 </style>
 </head>
 <body>
 
+<!-- AUDIO OPCIONAL -->
+<!-- Asegúrate de subir musica.mp3 -->
 <audio autoplay loop>
-<source src="manos.jpg.jpeg" type="audio/mpeg">
+<source src="musica.mp3" type="audio/mpeg">
 </audio>
 
 <div class="section" id="section1" style="display:block;">
 <h1>If you love me… open this ❤️</h1>
-<button onclick="next(2)">Open</button>
+<button onclick="nextSection(2)">Open</button>
 </div>
 
 <div class="section" id="section2">
 <h1>That was fast… 👀</h1>
 <h1>Are you sure you love me?</h1>
-<button onclick="next(3)">Yes I do ❤️</button>
+<button onclick="nextSection(3)">Yes I do ❤️</button>
 </div>
 
 <div class="section" id="section3">
 <h1>Hmm… let me see 👀❤️</h1>
-<img src="foto3.jpg.jpeg" class="main-photo">
+<img src="foto3.jpg" class="main-photo">
 <h1>Are you really sure you love me?</h1>
-<button onclick="next(4)">Yes, I am sure ❤️</button>
+<button onclick="nextSection(4)">Yes, I am sure ❤️</button>
 </div>
 
 <div class="section" id="section4">
-
 <div class="love-letter">
 <h1>I love you, Nilofar ❤️</h1>
 
-<p>
-My love, even when I struggle with the distance, even when I don't always know how to handle missing you…  
-please know that I love you more deeply than I can ever explain.
-</p>
+<p>My love, even when I struggle with the distance, even when I don't always know how to handle missing you… please know that I love you more deeply than I can ever explain.</p>
 
-<p>
-Sometimes I get emotional, sometimes I don’t react perfectly,  
-but it only happens because my heart feels you so strongly.  
-Because loving you is real to me.
-</p>
+<p>Sometimes I get emotional, sometimes I don’t react perfectly, but it only happens because my heart feels you so strongly. Because loving you is real to me.</p>
 
-<p>
-Even if I can't be next to you today,  
-I want you to feel my arms around you in every heartbeat.  
-Distance may separate our bodies,  
-but it will never separate what we share.
-</p>
+<p>Even if I can't be next to you today, I want you to feel my arms around you in every heartbeat.</p>
 
-<p>
-You are not just someone I love.  
-You are my peace.  
-My favorite smile.  
-My safe place.  
-My person.
-</p>
+<p>You are my peace. My favorite smile. My safe place. My person.</p>
 
-<p>
-No matter how far we are,  
-no matter how complicated some days feel,  
-what I feel for you stays steady.
-</p>
+<p>No matter how far we are, what I feel for you stays steady.</p>
 
-<p>
-And that’s something real. ❤️ TE AMO Nilofar
-</p>
-
+<p>TE AMO Nilofar ❤️</p>
 </div>
 
 <br><br>
-<button onclick="next(5)">Click here to see our favorite place ❤️</button>
-
+<button onclick="nextSection(5)">Click here to see our favorite place ❤️</button>
 </div>
 
 <div class="section" id="section5">
+<h1>I’ll wait for you until we can be together again ❤️</h1>
+<h1>TE AMO MI REINA ❤️</h1>
 
-<h1>I’ll wait for you until we can be together again here in our favorite place ❤️</h1>
-<h1>TE AMO MI REINA❤️.</h1>
+<img src="mar.jpg" class="place-photo">
 
-<!-- FOTO DEL MAR (más grande ahora) -->
-<img src="mar.jpg.jpeg" class="place-photo">
-
-<!-- ESPACIO PARA 6 FOTOS -->
 <div class="gallery">
-<img src="teamo.jpg.jpeg">
-<img src="amor2.jpg.jpeg">
-<img src="fot.jpg.jpeg">
-<img src="minovialinda,jpg.jpeg">
-<img src="foto3.jpg.jpeg">
-<img src="minovia.jpg.jpeg">
+<img src="teamo.jpeg">
+<img src="amor2.jpeg">
+<img src="fot.jpeg">
+<img src="minovialinda.jpeg">
+<img src="foto3.jpeg">
+<img src="minovia.jpeg">
 </div>
-
 </div>
 
 <script>
-
-function next(sectionNumber){
+function nextSection(sectionNumber){
 for(let i=1;i<=5;i++){
 document.getElementById("section"+i).style.display="none";
 }
@@ -245,7 +211,6 @@ setTimeout(()=>heart.remove(),6000);
 }
 
 setInterval(createHeart,300);
-
 </script>
 
 </body>
